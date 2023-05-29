@@ -20,3 +20,10 @@ select @total;
 
 call northwind.EjemploCursor();
 select * from pedidosclientes;
+
+set @valor = 0;
+call ExplicacionCursor01(@valor);
+select @valor;
+
+call northwind.ExplicacionCursor03();
+SELECT * FROM northwind.categorysales;
